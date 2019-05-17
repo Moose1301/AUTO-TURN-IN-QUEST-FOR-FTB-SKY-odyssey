@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 
@@ -15,9 +15,6 @@ InputBox, UserInput, Loop number, Please enter a loop number., , 300, 100
 if ErrorLevel
     MsgBox, CANCEL was pressed.
 else
-	IfLessOrEqual %UserInput%, 0
-    MsgBox, Error Please Enter a Number 1 or Greater	
-	else
 	Loop, %UserInput%
 
 	{
